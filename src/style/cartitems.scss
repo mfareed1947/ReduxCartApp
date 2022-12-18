@@ -1,0 +1,56 @@
+@import 'color';
+
+
+.cartitems {
+    background-color: $white;
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    >div {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        button {
+            width: 30px;
+            height: 30px;
+            background-color: $primary;
+            color: $white;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        p {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    >svg {
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: auto;
+        cursor: pointer;
+
+        &:hover {
+            color: $secondary;
+        }
+
+    }
+}

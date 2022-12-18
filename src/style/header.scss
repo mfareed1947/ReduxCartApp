@@ -1,0 +1,39 @@
+@import 'color';
+
+
+nav {
+    background-color: $secondary;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    h2 {
+        color: $primary;
+    }
+
+    div {
+
+        display: flex;
+        align-items: center;
+
+        a {
+            color: $primary;
+            font-size: 1.2rem;
+            margin: 10px;
+        }
+
+        p{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $white;
+            font: 900 0.7rem 'Roboto';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(80%,-80%);
+        }
+    }
+
+}
